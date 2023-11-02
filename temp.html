@@ -6,11 +6,13 @@
   <body>
    <div id="head">こんにちは </div>  
    <button id="b1"> 色の変更 </button　　>
-   
+   </button>
     <script>
-    function myFunction() {
+    function changeColor(idname) {
+      var obj = document.getElementById(idname);
+  obj.style.backgroundColor = '#ff0000';
     }
-
+      
     let b = document.getElementById('b1');
     b.addEvent("click", myfunction)
     </script>

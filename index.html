@@ -19,7 +19,7 @@
         <div id="map" style="height: 80vh"></div>
         <script>
             const map = L.map('map', {
-                center: [36.5, 137.1],
+                center: [35.717, 139.457],
                 zoom: 5,
             });
             const backgroundLayer = L.tileLayer(
@@ -45,6 +45,10 @@
                         .bindPopup((layer) => layer.feature.properties.P29_00５) // ポップアップで学校名を表示
                         .addTo(map);
                 });
+            const marker = L.marker([36.51, 137.11]); // ピン＝Markerを初期化
+            marker.bindPopup('津田塾大学'); // ポップアップを紐付け
+            map.addLayer(marker); // ピンを地図上に追加
+            
         </script>
     </body>
 </html>
